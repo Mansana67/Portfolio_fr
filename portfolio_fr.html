@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- STYLESHEESH -->
+    <link rel="stylesheet" href="CSS/portfolio.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSideBar()><a href=""><i class="fa fa-window-close fa-2x" aria-hidden="true"></i></a></li>
+                <li class="mobile-anim"><a href="index.html">Home</a></li>
+                <li class="mobile-anim active"><a href="#portfolio">Portfolio</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="#"><img src="IMG/White-logo.png" alt="" height="30px">&nbsp;&nbsp;JodaRak</a></li>
+                <li class="hideOnMobile"><a href="index_fr.html">Accueil</a></li>
+                <li class="hideOnMobile active"><a href="#portfolio">Portfolio</a></li>
+                <li class="menu-btn" onclick=showSideBar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--CONTENT-->
+    <div class="main-div">
+        <div class="nav-btn">
+            <button class="btnNav activeNav" id="btn-3D-anim" >Animation</button>
+                <a href="Ptits-loup/index.html">
+                    <button class="btnNav" id="btn-website"> Ptits Loups(Projet en cours)
+                    </button>
+                </a>
+        </div> 
+        <div class="content-div">
+            <div class="anim-2D">
+                <div class="roban-adala">
+                    <h2>Roban'Adala</h2>
+                    <h3>Résumé</h3>
+                    <div class="heist-anim">
+                        <span>"Roban'adala" ou "le braquage fou" est une animation 2D centrée autour de quatre personnages : Collette la conductrice, Doda le macho, Rainboto le débile et Vazo le chanteur. Ensemble, ils s'entraident pour braquer une banque malgré leur manque de compétences.</span>
+                    </div>
+                    <span id="highlight">Lien de l'animation : <a href="https://youtu.be/GfBKd3JIm1U" target="_blank">https://youtu.be/GfBKd3JIm1U</a></span>
+                </div>
+                <div class="ad">
+                    <h2>Popotes Store</h2>
+                    <h3>Résumé</h3>
+                    <div class="ad-sum">
+                        <span>"Popotes Store", une animation combinée 3D et 2D, est une publicité visant à promouvoir le site Web Popotes Store afin d'aider les gens pendant la pandémie à acheter leurs besoins en ligne.</span>
+                    </div>
+                    <span id="highlight">Lien de l'animation : <a href="https://youtu.be/6eL8yZsnBbU" target="_blank">https://youtu.be/6eL8yZsnBbU</a></span>
+                </div>
+            </div> 
+            <div class="anim-3D">
+                <div class="jodarak">
+                    <h2><img src="IMG/White-logo.png" alt="" height="40px">&nbsp;&nbsp;JodaRak</h2>
+                    <h3>Résumé</h3>
+                    <div class="ad-sum">
+                        <span>JodaRak est une animation 3D créée pour montrer la transformation du design de voiture, passant de croquis 2D à une modélisation 3D complexe, pour se terminer par une courte animation servant de publicité pour le design.</span>
+                    </div>        
+                    <span id="highlight">Lien de l'animation : <a href="https://youtu.be/E2IrIb7E78U" target="_blank">https://youtu.be/E2IrIb7E78U</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Saira', serif;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url('../IMG/portfoliobackground.png') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*NAVBAR*/
+    nav{
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        top: 0;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        align-items: center;
+    }
+
+    nav ul li{
+        height: 40px;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        padding: 0em 1em;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transition: .5s all ease;
+    }
+
+    nav ul li a:hover{
+        background-color: rgb(77, 77, 77);  
+    }
+
+    nav li:first-child{
+        margin-right: auto;
+    }
+
+    .sidebar{
+        position: fixed;
+        top: 0;
+        right: 0; 
+        height: 100vh;
+        width: 250px;
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 0.468);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        backdrop-filter: blur(5px);
+    }
+
+    .sidebar li{
+        width: 100%;
+    }
+
+    .sidebar li a{
+        width: 100%;
+    }
+
+    .menu-btn{
+        display: none;
+    }
+
+/*CONTENT PORTFOLIO*/
+    .nav-btn .btnNav{
+        background: none;
+        border: none;
+        cursor: pointer;
+        border: solid white 2px;
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        border: solid white 2px;
+        padding: .5em 1.5em;
+        margin-bottom: 1.5em;
+        letter-spacing: .2em;
+        font-weight: 700;
+        transition: all .5s ease;
+    }
+
+    .nav-btn .btnNav a{
+        text-decoration: none;
+    }
+
+    .nav-btn button:hover{
+        background-color: white;
+        color: black; 
+    }
+
+    .main-div{
+        margin-top: 3.5em; 
+        padding-bottom: 1em;
+    }
+
+    .main-div .content-div{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+        
+    }
+
+    .main-div .nav-btn{
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .main-div .content-div h2{
+        text-align: center;
+        margin-top: .5em;
+    }
+
+    .content-div  #highlight{
+        font-weight: 700;
+    }
+
+    .activeNav{
+        transform: translateY(-8px) !important;
+        color: black !important;
+        background-color: white !important;
+    }
+
+    .active{
+        background-color: rgb(77, 77, 77);  
+    }
+
+    .jodarak h2{
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+
+
+

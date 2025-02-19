@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Saira', serif;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+}
+/*NAVBAR*/
+    nav{
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        top: 0;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        align-items: center;
+    }
+
+    nav ul li{
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    nav #logo{
+        padding-left: 1em;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        padding: 0em 1em;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transition: .5s all ease;
+    }
+
+    nav ul li a:hover{
+        background-color: rgb(77, 77, 77);  
+    }
+
+    nav li:first-child{
+        margin-right: auto;
+    }
+
+    .sidebar{
+        position: fixed;
+        top: 0;
+        right: 0; 
+        height: 100vh;
+        width: 250px;
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 0.468);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        backdrop-filter: blur(5px);
+    }
+
+    .sidebar li{
+        width: 100%;
+    }
+
+    .sidebar li a{
+        width: 100%;
+    }
+
+    .menu-btn{
+        display: none;
+    }
+
+    .active{
+        background-color: rgb(77, 77, 77);  
+    }
+    
+/*HERO SECTION*/
+    .hero{
+        width: 100%;
+        height: 100vh;
+        background-image: url("../IMG/Hero-image.png")!important;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+     .section .content{
+        max-width: 90%;
+        font-size: .5rem; 
+        padding-top: 30em;
+        padding-left: 15em;
+    }
+
+    .section .content .name{
+        color: white;
+        animation: fadeIn 1s ease forwards;
+        opacity: 0;
+    }
+     @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }    
+     }
+     
+    .name li{
+        list-style: none;
+        margin: 0;
+        
+    }
+
+    .name #weight-normal{
+        font-family: 'Saira', serif;
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: .7em;
+
+    }
+
+    .name #weight-bold{
+        font-family: 'Saira', serif;
+        font-weight: 900;
+        font-size: 2.5rem;
+        line-height: .9em;
+        font-size: 3rem;
+    }
+
+    .name #weight-light{
+        font-family: 'Saira', serif;
+        font-weight: 200;
+        font-size: 1rem;
+        letter-spacing: .2em;
+        line-height: .9em;
+    }
+
+    .btn-home-page{
+        margin-top: 1.5em;
+        font-family: 'Saira', serif;
+        font-weight: 400;
+       
+    }
+
+    .btn-home-page button{
+        padding: .5em 1.5em;
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: all .5s ease;
+        
+    }
+
+    .btn-home-page button a{
+        text-decoration: none;
+    }
+
+    .btn-home-page #btn-resume{
+        margin-right: 2em;
+    }
+
+    .btn-home-page #btn-resume, #btn-portfolio{
+        border: solid white 2px;
+        border-radius: 5px;
+        letter-spacing: .1em;
+    }
+
+    .btn-home-page button:hover{
+        transform: translateY(-5px);
+        color: black !important;
+    }
+
+
+/*ABOUT SECTION*/
+    .about{
+        width: 100%;
+        height: 100vh;
+        background-image: url('../IMG/Img-about.png')!important;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .section .content-about .about{
+        padding-top: 3em;
+    }
+
+    .about h1{
+        padding: 0;
+        margin: 0;
+        margin-left: 2em;
+    }
+
+    .about span{
+        margin-left: 4em;
+    }
+
+    .about p{
+        margin-top: 5em;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about .contact{
+        display: flex;
+        margin-top: 5em;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .about .contact .whatsapp a{
+        text-decoration: none;
+        align-items: center;
+    }
+
+
+
+    .about .contact .whatsapp span{
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .about .location{
+        text-align: center;
+        margin-top: .5em;
+    }
+
+    .about .location span{
+        margin: 0;
+
+    }
+
+/*RESUME SECTION*/   
+    .resume{
+        width: 100%;
+        height: 100vh;
+        background-image: url('../IMG/Img-resume.jpg')!important;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .content-resume{
+        padding-top: 5em;
+        padding-right: .5em;
+        padding-left: .5em;
+        display: flex;
+        gap: 5em;
+        justify-content: center;
+    }
+
+    .software-skills ul{
+        list-style: none;
+        margin: 0;
+        padding:  0em 1em;
+    }
+
+    .software-skills h4{
+        margin: 0;
+        padding: 0;
+    }
+
+    .language{
+        font-family: 'Saira', serif;
+        margin-bottom: .5em;
+    }
+
+    .language h2{
+        margin: 0;
+    }
+
+    .language ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .high-school{
+        display: flex;
+        margin-bottom: .8em;
+    }
+
+    .high-school .high-school-title{
+        margin-left: 2em;
+    }
+
+    .high-school .high-school-title h3,.high-school .high-school-title p {
+        margin: 0;
+        padding: 0;
+
+    } 
+    .high-school .square{
+        background-color: rgb(31, 138, 219);
+        width:3em;
+        height: 3em;
+        border-radius: 3px;
+        margin-top: .2em;
+    }
+
+    .high-school .square span{
+        position: relative;
+        top: 23%;
+        left: 10%;
+    }
+/*HIGH SCHOOL*/
+.white-bar{
+        background-color: white;
+        width: .2em;
+        height: 2.5em;
+        margin-left: 1.4em;
+    }
+
+/*BACHELOR DEGREE*/
+    .bachelor-dg{
+        display: flex;
+    }
+
+    .bachelor-dg .square{
+        background-color: rgb(31, 138, 219);
+        width:3em;
+        height: 3em;
+        border-radius: 3px;
+        margin-top: 1em;   
+    }
+
+    .bachelor-dg .square span{
+        position: relative;
+        top: 23%;
+        left: 8%;
+    }
+
+    .bachelor-dg .bachelor-title{
+        margin-left: 2em;
+    }
+
+    .bachelor-dg .bachelor-title h3, .bachelor-dg .bachelor-title p{
+        padding: 0;
+        margin: 0;
+    }
+
+/*BACHELOR DEGREE*/
+/*MASTER DEGREE*/
+    .master-degree{
+        display: flex;
+    }
+
+    .master-degree .square{
+        background-color: rgb(31, 138, 219);
+        width:3em;
+        height: 3em;
+        border-radius: 3px;
+        margin-top: 1em;
+    }
+
+    .master-degree .square span{
+        position: relative;
+        top: 23%;
+        left: 8%;
+    }
+
+    .master-degree .master-title{
+        margin-left: 2em;
+        margin-top: .8em;
+    }
+
+    .master-degree .master-title h3, .master-degree .master-title p{
+        margin: 0;
+        padding: 0;
+    }
+
+/*EXPERIENCE*/
+    .experience{
+        margin-top: 2.4em;
+    }
+
+    .container-experience .experience .ptit-loup{
+        display: flex;
+    }
+
+    .container-experience .experience .ptit-loup h3, .container-experience .experience .ptit-loup p{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-experience .experience .ptit-loup .exp-web{
+        margin-left: 2em;
+        margin-top: .8em;
+    }
+
+    .ptit-loup .square{
+        background-color: rgb(31, 138, 219);
+        width:3em;
+        height: 3em;
+        border-radius: 3px;
+        margin-top: 1em;
+    }
+
+    .ptit-loup .square span{
+        position: relative;
+        top: 23%;
+        left: 8%;
+    }
+
+
+/*PERSONAL SKILLS*/ 
+    .skills{
+        font-family: 'Saira', serif;
+    }
+
+    .skills h2{
+        margin: 0;
+    }
+
+    .skills ul{
+        margin: 0;
+        list-style: none;
+        padding: 0;
+    }
+
+/*CREATION*/
+    .container-creation{
+        font-family: 'Saira', serif;
+    }
+
+/*WHAT CAN I DO SECTION*/
+
+    .container-creation .container-hobbies .reading-drawing {
+        margin-bottom: 1em;
+    }
+
+    .container-creation .container-hobbies .reading-drawing span{
+        padding: .5em;
+        margin: .5em;
+    }  
+    
+    .container-creation .container-hobbies .reading-drawing .fa-book{
+        padding-right: .5em;
+    }
+
+    .container-creation .container-hobbies .reading-drawing .fa-pencil{
+        padding-right: .5em;
+    }
+
+    .container-creation .container-hobbies .gaming-3D span{
+        padding: .5em;
+        margin: .5em;
+    }
+
+    .container-creation .container-hobbies .gaming-3D .fa-gamepad{
+        padding-right: .5em;
+    }
+
+    .container-creation .container-hobbies .gaming-3D .fa-paintbrush{
+        padding-right: .5em;
+    }
+
+
