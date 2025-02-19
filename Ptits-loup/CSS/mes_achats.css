@@ -1,0 +1,26 @@
+.produits{
+    width: 600px;
+    background-color: aqua;
+}
+
+.info-produits{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    text-align: center;
+    border: black solid 2px;
+}
+
+
+.produits .info-produits .produits-acheter{
+    width: 200px;
+    
+}
+
+.produits .info-produits .details{
+    width: 200px;
+}
+
+.produits .info-produits .prix{
+    width: 600px;
+}

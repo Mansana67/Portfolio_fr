@@ -1,0 +1,257 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    
+    
+  
+}
+
+h1, h3{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/*DOCUMENT*/
+/*CLASS*/
+.animation-product{
+    animation: .5s animationProduct ease-in-out forwards;
+}
+
+@keyframes animationProduct {
+    from{
+        transform: translateY(-200%);
+    }to{
+        transform: translate(-50%, -50%);
+    }
+}
+
+.animation-product-close{
+    animation: .5s animationProductClose ease-in-out forwards;
+}
+
+@keyframes animationProductClose {
+    from{
+        
+        transform: translate(-50%, -50%);
+    }to{
+        transform: translateY(-200%);
+    }
+}
+
+.container-details{
+    background: linear-gradient(180deg, rgba(21,238,44,1) 30%, rgb(3, 109, 26) 100%);
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 15px;
+    box-shadow: 0px 3px 10px black;
+    transform: translateY(-200%);
+    z-index: 556;
+   
+    
+    
+}
+
+.container-details .container-product .x-mark{
+    text-align: right;
+    margin-right: .5em;
+    padding-top: .5em;
+    
+   
+}
+
+.container-details .container-product .x-mark i{
+    cursor: pointer;
+    color: azure;
+}
+
+.container-details .container-product .img-details{
+    background-color: rgb(103, 88, 176);
+    border-radius: 15px 15px 0px 0px;
+}
+
+
+
+/*T-SHIRT*/
+.container-product{
+    text-align: center;
+}
+
+.container-product .product-name{
+    margin-top: -.2em;
+}
+
+/*COLOR VARIATION*/
+.container-details .container-product .color-selection{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 60%;
+    margin: .5em auto;
+}
+
+.container-details .container-product .color-selection .blue{
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    cursor: pointer;
+    border: white solid 3px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.4);
+    transition: .2s;
+}
+
+.container-details .container-product .color-selection .blue:hover{
+    transform: translateY(-2px);
+}
+
+.container-details .container-product .color-selection .red{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+    border: white solid 3px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.4);
+    transition: .2s;
+}
+
+.container-details .container-product .color-selection .red:hover{
+    transform: translateY(-2px);
+}
+
+.container-details .container-product .color-selection .orange{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 102, 0);
+    cursor: pointer;
+    border: white solid 3px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.4);
+    transition: .2s;
+}
+
+.container-details .container-product .color-selection .orange:hover{
+    transform: translateY(-2px);
+}
+
+.container-details .container-product .color-selection .light-blue{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(40, 118, 243);
+    cursor: pointer;
+    border: white solid 3px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.4);
+    transition: .2s;
+}
+
+.container-details .container-product .color-selection .light-blue:hover{
+    transform: translateY(-2px);
+}
+
+/*SIZE QUANTITY*/
+.container-details .size-quantity{
+    columns: 2;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.container-details .size-quantity .quantity .add-remove #add:active{
+    background-color: aqua;
+    transition: .1s;
+   
+}
+
+.container-details .size-quantity .quantity .add-remove #remove:active{
+    background-color: aqua;
+    transition: .1s;
+}
+
+.container-details .size-quantity .size-selection{
+    text-align: center;
+}
+
+
+/*BUTTON*/
+.container-details .btn-confirmation{
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: .5em;
+    margin-right: .5em;
+
+    
+}
+
+.container-details .btn-confirmation #btn-buy{
+    background-color: rgb(226, 98, 0);
+    color: white;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.container-details .btn-confirmation #btn-cart{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.4);
+}
+
+#btn-cart, #btn-buy:hover{
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.437);
+}
+
+
+
+
+.container-details .btn-confirmation button{
+    cursor: pointer;
+    color: inherit;
+	border: none;
+	font: inherit;
+	outline: inherit;
+    margin-left: .5em;
+    padding: .3em 1em .3em 1em;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: .2s;
+    
+
+}
+
+.container-details .btn-confirmation button:hover{
+    transform: translateY(-2px);
+}
+
+.container-details .size-quantity .size button, .container-details .size-quantity .quantity button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: .5em;
+    cursor: pointer;
+    color: inherit;
+	border: none;
+	font: inherit;
+	outline: inherit;
+    font-weight: 600;
+    font-size: 1.1em;
+    background-color: rgb(44, 122, 230);
+    color: white;
+    transition: .5s;
+
+}
+
+.btn-size{
+    border: 2px white solid;
+    transform: scale(1.2);
+    transition: .5s;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.522);
+}
+
+
+

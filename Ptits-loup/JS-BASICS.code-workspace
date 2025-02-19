@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "C:/xampp/htdocs/Web_Dog"
+		},
+		{
+			"path": "../beginner-html-site-styled-gh-pages"
+		},
+		{
+			"path": "../Hide and show"
+		},
+		{
+			"path": "../JS"
+		},
+		{
+			"path": "../JS DOM"
+		},
+		{
+			"path": "../HTML-CSS"
+		},
+		{
+			"path": "../slide"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JS-BASICS"
+	}
+}

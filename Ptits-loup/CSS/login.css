@@ -1,0 +1,345 @@
+
+
+body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;  
+       
+    }
+
+/*PLACE*/
+
+.login-background {
+    background-color: rgba(0, 0, 0, 0.396);
+    width: 110%;
+    height: 110vh;
+    position: fixed;
+    z-index: 555;
+    margin: -1em;
+    padding: 0;
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    z-index: -5;
+     
+}
+
+.container-login{
+    background: rgb(2,0,36);
+    background: linear-gradient(356deg, rgb(27, 20, 150) 0%, rgb(23, 23, 166) 35%, rgba(3,142,170,1) 100%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0em 2em 2em 2em;
+    z-index: 555;
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+    width: 60%;
+    
+   
+   
+    
+}
+
+.container-login .content-login .input-info{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container-login .content-login .input-info span{
+    margin-top: .8em;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: .2em;
+}
+
+.container-login .content-login .input-info input{
+    padding: .8em;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    font: inherit;
+    font-size: 12px;
+}
+
+.container-login .content-login h2{
+text-align: center;
+margin: 0;
+}
+
+.container-login .image-login{
+    padding-top: .5em;
+    display: flex;
+    justify-content: center;
+    
+ 
+}
+
+.container-login .xmark-login{
+    cursor: pointer;
+    position: fixed;
+    right: 0%;
+    padding: .5em;
+}
+
+.container-login .content-login .btn-login{
+    text-align: center;
+
+}
+
+.container-login .content-login .btn-login button{
+    width: 60%;
+    padding: .3em .5em .3em .5em;
+    margin-bottom: 1em;
+    margin-top: .4em;
+    color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    border-radius: 5px;
+    background-color: #06a416  ;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.437);
+    transition: .2s;
+
+}
+
+.container-login .content-login .btn-login button:hover{
+    transform: translateY(-4px);
+}
+
+.container-login .content-login .mdp{
+    margin: 1em auto;
+    text-align: right;
+    padding-right: .5em;
+    font-size: 10px;
+    font-weight: 600;
+   
+    
+}
+
+.container-login .content-login .mdp a{ 
+    border-bottom: solid 1px white;
+    cursor: pointer;
+}
+
+
+
+/*STYLE*/
+.container-login .content-login p{
+    font-size: .8em;
+    text-align: center;
+}
+
+.container-login .content-login p span{
+    color: #00ff2f ;
+    cursor: pointer;
+    font-weight: 600;
+    border-bottom:  #00ff2f solid 1px;
+}
+
+
+
+/*SIGN UP*/
+.container-signUp{
+    background: rgb(2,0,36);
+    background: linear-gradient(356deg, rgb(27, 20, 150) 0%, rgb(23, 23, 166) 35%, rgba(3,142,170,1) 100%);
+    position: fixed;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0em 2em 2em 2em;
+    z-index: 555;
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.437);
+    width: 60%;
+    margin-bottom: 2em;
+    
+    
+}
+
+.container-signUp h2{
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    
+
+}
+
+.container-signUp .xmark-login{
+    cursor: pointer;
+    position: fixed;
+    right: 0%;
+    padding: .5em;
+
+}
+
+.container-signUp .image-login{
+    display: flex;
+    justify-content: center;
+    padding-top: .5em;
+}
+
+
+
+
+
+.container-signUp .content-signUp{
+    display: flex;
+    flex-direction: column;
+    padding: .5em 1.5em 1.5em 1.5em ;
+    text-align: center;
+}
+
+.container-signUp .content-signUp span{
+    margin-top: .5em;
+    font-weight: 600;
+}
+
+.container-signUp .content-signUp input{
+    padding: .8em;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    font: inherit;
+    font-size: 12px;
+}
+
+.container-signUp .btn-sign-up {
+    text-align: center;
+}
+
+.container-signUp .btn-sign-up button{
+    width: 60%;
+    padding: .3em .5em .3em .5em;
+    margin-bottom: 1em;
+    margin-top: .4em;
+    color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    border-radius: 5px;
+    background-color: #06a416  ;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.437);
+    font-weight: 600;
+    transition: .2s;
+}
+
+.container-signUp .btn-sign-up button:hover{
+    transform: translateY(-4px);
+}
+
+.container-signUp p{
+    font-size: .8em;
+    text-align: center;
+}
+
+.container-signUp p span{
+    color: #00ff2f ;
+    cursor: pointer;
+    font-weight: 600;
+    border-bottom:  #00ff2f solid 1px;
+}
+
+
+/*RESPONSIVE LOGIN*/
+
+/*CLASS LOGIN FOR ANIMATION*/
+.background{
+    opacity:1;
+    z-index: 555;
+    animation: showBackground .5s ease-in-out forwards;
+
+}
+
+@keyframes showBackground {
+    from{
+        opacity: 0;
+        z-index: -5;
+    }to{
+        opacity:1;
+        z-index: 555;
+    }
+}
+
+.background-slide{
+    animation: backgroundSlide .5s ease-in-out forwards;
+}
+
+@keyframes backgroundSlide {
+    from{
+        opacity:1;
+        z-index: 555;
+    }to{
+        opacity: 0;
+        z-index: -5;
+    }
+}
+
+.login-signup-slide{
+    animation: loginSlide 1s ease-in-out forwards;
+}
+
+@keyframes loginSlide {
+    from{
+       z-index: -999;
+        opacity: 0;
+    }to{
+       z-index: 558;
+        opacity: 1;
+    }
+}
+
+.login-signup-slide-remove{
+    animation: loginSignUpSlideRemove .5s ease-in-out forwards;
+}
+
+@keyframes loginSignUpSlideRemove {
+    from{
+       z-index: 558;
+        opacity: 1;
+    }to{
+       z-index: -999;
+        opacity: 0;
+    }
+}
+
+
+/*RESPONSIVE*/
+@media only screen and (min-width : 680px){
+    .container-signUp{
+        width: 40%;
+    }
+
+    .container-login{
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width : 920px){
+    .container-signUp{
+        width: 30%;
+    }
+
+    .container-login{
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width : 1200px){
+    .container-signUp{
+        width: 22%;
+    }
+
+    .container-login{
+        width: 22%;
+    }
+}

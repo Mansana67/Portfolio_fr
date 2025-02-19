@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P'tits Loup d'Amour</title>
+
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!--FONTs -->
+        <!--Stalemate-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Stalemate&display=swap" rel="stylesheet">
+
+        <!--Poppins-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Stalemate&display=swap" rel="stylesheet">
+
+    <!--STYLESHEET-->
+    <link rel="stylesheet"  type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="CSS/responsive.css" >
+    <link rel="stylesheet" type="text/css" href="CSS/login.css" >
+    <link rel="stylesheet" type="text/css" href="CSS/shop-web.css" >
+    <link rel="stylesheet" type="text/css" href="CSS/product-details.css" >
+    <link rel="stylesheet" type="text/css" href="CSS/mdp.css">
+    <link rel="stylesheet" type="text/css" href="CSS/mvola.css">
+
+
+
+    
+</head>
+<body>
+
+<!--LOGIN-->  
+    <div class="login-background">
+        <div class="container-login">
+            <div class="content-login">
+                <div class="xmark-login"><i id="xmark-login" class="fa fa-circle-xmark fa-2x"></i></div> 
+                <div class="image-login">
+                    <img src="CSS/images/logo-final.png" alt="" width="150" >
+                </div>
+                
+                
+                <h2>Se connecter   
+                </h2>
+                <div class="input-info">
+                    <span>Email</span><input type="email" placeholder="abcdef@gmail.com">
+                    <span>Mot de passe</span><input type="password" placeholder="**********">
+                </div>
+                <div class="mdp">
+                    <a><span>Mot de passe oublié ?</span></a>
+                </div>
+                <div class="btn-login">
+                    <button >Se connecter</button>
+                </div>
+                <p>Pas encore de compte ? <span><a class="signUp">Inscrivez-vous</a> </span> </p> 
+            </div>
+        </div>
+    
+<!--SIGN UP-->  
+        <div class="container-signUp">
+            <div class="xmark-login">
+                <i id="xmark-sign-up" class="fa fa-circle-xmark fa-2x"></i>
+            </div> 
+            <div class="image-login">
+                <img src="CSS/images/logo-final.png" alt="" width="150" >
+            </div>
+            <h2>S'inscrire</h2>
+            <div class="content-signUp">
+                <span>Nom </span><input type="text" name="" id="">
+
+                <span>Email</span><input type="email" placeholder="abcdef@gmail.com">
+
+                <span>Mot de passe</span><input type="password" placeholder="**********">
+
+                <span>Confirmer mot de passe</span><input type="password" placeholder="**********">
+            </div>
+            <div class="btn-sign-up">
+                <button ><a>S'inscrire</a> </button>
+            </div>
+            <p>Vous avez déjà un compte ? <a><span id="signIn">Connectez-vous</span></a></p>
+        </div>
+    </div>  
+   
+<!--MOT DE PASSE--> 
+    <!--ADDRESSE EMAIL-->
+        <div class="container-mdp">
+            <div class="mdp-recover">
+                <p>Pour réinitialiser votre mot de passe, entrez votre addresse email</p>
+                <h3>Addresse Email</h3>
+                <input type="email">
+            </div>
+            <button id="btn-continuer">Continuer</button>
+            <button id="btn-annuler">Annuler</button>
+        </div>
+    <!--CODE VERIFICATION-->
+        <div class="code-email">
+            <div class="code-verification">
+                <p>Entrez ici le code que vous avez obtenu dans votre email</p>
+                <h3>Code</h3>
+                <input type="text">
+            </div>
+            <button id="btn-code-continuer">Continue</button>
+        </div>
+    <!--RESET PASSWORD-->
+        <div class="reset-password">
+            <div class="container-password">
+                <h2>Reinitialiser votre mot de passe</h2>
+                <p>S'il vous plaît, choisissez votre nouveau mot de passe<p>
+            </div>
+            <div class="container-new-mdp">
+                <input type="password" placeholder="nouveau mot de passe">
+                <input type="password" placeholder="confirmer mot de passe">
+            </div>
+            <button>Changer le mot de passe</button>
+        </div>
+
+<!--MVOLA/AIRTELMONEY-->
+    <section class="section-carte-paiement">
+        <h2>MVola</h2>
+        <div class="mvola-info">
+            <span>Numéro du destinataire</span><input type="text">
+            <span>Montant en Ariary</span><input type="text">
+            <span>Votre code secret</span><input type="text" >
+            <div>
+                <button id="btn-mvola-envoyer">envoyer</button>
+                <button id="btn-mvola-annuler">annuler</button>
+            </div>   
+        </div>
+    </section>
+
+<!--FULL DOCUMENT--> 
+    <div class="document-size">
+        <!--POPUP IMAGE-->
+            <div class="popup-image">
+                <span>&times;</span>
+                <div class="arrow-popup">
+                    <div class="arrow-popup-left">
+                        <i class="fa-solid fa-circle-chevron-left fa-2x " id ="arrow-left-popup"></i>
+                    </div>                   
+                    <div class="arrow-popup-right">
+                        <i class="fa-solid fa-circle-chevron-right fa-2x " id ="arrow-right-popup"></i></i>
+                    </div>  
+                </div>
+                <img id ="img1" src="CSS/images/dog_accueil.jpg" alt="">
+            </div>
+
+        <div class="title-and-subTitle">
+            <h1>P'tits Loups d'Amour 
+                <div>Madagascar 
+                    <span class="berger">BERGER BLANC SUISSE</span>  
+                </div> 
+            </h1> 
+        </div>
+        <div class="quote-test">
+            <div class="quotation-mark-test">
+                <img src="CSS/images/madagascar.png" alt="" width="40">
+                <span class="fa-solid fa-quote-left left"></span>
+                <blockquote> Votre rêve, notre passion </blockquote>
+                <span class="fa-solid fa-quote-right"></span>
+            </div>   
+            
+        </div>
+    </div>
+  
+    <!--DOCUMENT CONTENT--> 
+        <div class="document">
+                
+            <!--NAVBAR-->    
+                <div class="navbar">
+                    
+                    <div class="container">
+                        <img src="CSS/images/logo-final.png" alt="" width="48" height="48">
+                        <i class="fa fa-bars mobile-menu"  id="menu"></i>
+                        <nav>  
+                            <i class="fa fa-circle-xmark fa-1x mobile-menu-exit" id="mobile-exit" alt="Close navigation"></i>
+                            <ul>
+                                <li class="current btn" id="accueil"><i class="fa fa-house "></i>&nbsp;&nbsp;Accueil</li>
+                                <li class="btn" id="photo-video"><i class="fa fa-photo-film "></i>&nbsp;&nbsp;Photos et Videos</li>
+                                <li class="btn" id="article"><i class="fa fa-newspaper btn"></i>&nbsp;&nbsp;Articles</li>
+                                <li class="btn" id="contact"><i class="fa fa-address-book btn"></i>&nbsp;&nbsp;Contact</li>
+                                <button class="show-login"><i class="fa fa-user"></i>&nbsp;&nbsp;CONNECTER</button>
+                            </ul>
+                        </nav>
+                        <img src="CSS/images/logo-final-flipped.png" alt="" width="48" height="48" class="dog-right">
+                    </div>
+                </div>
+        
+            <!--MAIN CONTENT--> 
+                <section class="main-content">
+                    <i class="fa-solid fa-circle  fa-bars-staggered sub-menu" ></i>
+                    <div class="content">
+                        <i class="fa-solid fa-arrow-left close-arrow"></i>
+                        <div class="rubrique">
+                            <h4>Rubriques</h4>
+                            <ul>
+                                <li class="btn-style-submenu " id="presentation"><i class="fa fa-person-chalkboard "></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Présentation</li>
+                                <li class="btn-style-submenu " id="a-propos"><i class="fa fa-address-card"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A propos</li>
+                                <li class="btn-style-submenu" id="lien"><i class="fa fa fa-link"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Liens</li>
+                            </ul>
+                        </div>
+                        <div class="chiens">
+                            <h4>Chiens</h4>
+                            <ul>
+                                <li class="btn-style-submenu" id="male"><i class="fa fa-mars"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mâles</li>
+                                <li class="btn-style-submenu " id="femelle"><i class="fa fa-venus"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Femelles</li>  
+                            </ul>
+                        </div>
+                        <div class="chiots">
+                            <h4>Chiots</h4>
+                            <ul>
+                                <li class="btn-style-submenu " id="chiot-disponible"><i class="fa fa-dog"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chiots disponibles</li>
+                                <li class="btn-style-submenu " id="future-portees"><i class="fa fa-history"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Futures portées</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+            <!--CONTENT WEBSITE-->
+
+                
+                    <div class="show-content">
+            <!--ACCUEIL-->
+                        <div class="accueil">
+                            <h3>Accueil</h3>
+                            <p>Pourquoi choisir un Berger Blanc Suisse ?</p>
+                            <span class="text-illustration">
+                                <img src="CSS/images/dog_accueil.jpg" class="illustration" alt="">
+                                <span>
+                                    Avec sa silhouette très <b>élégante</b> et <b>harmonieuse</b>, le Berger Blanc Suisse est la douceur même. En effet, le caractère du Berger blanc suisse en fait un animal <b>gentil</b>, <b>docile</b> et <b>patient</b>. C’est un <b>chien débordant d'affection</b> et très proche de sa famille. Il <b>aime la compagnie de l'humain</b> et sait très bien s'adapter à toute la famille. Il se montre attentif avec les personnes âgées qu'un excellent compagnon de jeu pour les enfants. Il est plus doux et sensible qu'un berger allemand. <br/><br/>
+                                </span>
+                            </span>  <br/>
+                            <span>
+                                <b>Sensible, intelligent et curieux</b>, le Berger Blanc Suisse est un chien qui s'éduque facilement <b>car il est très à l'écoute de son maître</b>. Il suffit qu'il soit <b>sociabilisé très tôt dès son jeune âge</b> pour qu'il puisse appréhender rapidement les sons et les lieux les plus divers. <b>Très sociable</b>, il cohabite très bien avec ses congénères et les chats ainsi qu’avec les autres animaux.
+                                Une des particularités du Berger Blanc Suisse est que c’est un chien avec un <b>poil autonettoyant</b>. Un coup de brosse hebdomadaire suffit au Berger Blanc Suisse pour qu’il reste toujours blanc.
+                                
+                            </span> 
+                        </div>
+
+            <!--VIDEO -->
+                        <div class="video-image">
+                            <h3 id="video-change">Videos</h3>
+                            <div class="down-arrow">
+                                <i class="fa-solid fa-arrow-right arrow" id="arrow-right"></i>
+                            </div>
+                            
+                            <div class="video-container">
+                                <i class="fa-solid fa-circle-chevron-left fa-2x " id="left-arrow"></i>
+                                <div class="vid">
+                                    <video controls src="CSS/videos/vid-1.mp4" type="video/MP4" id="vid-1"></video>
+                                </div>
+                                <i class="fa-solid fa-circle-chevron-right fa-2x" id="right-arrow"></i>
+                            </div>
+                        </div>
+
+            <!--IMAGEs-->
+                        <div class="image">
+                            <h3>Images</h3>
+                            <div class="down-arrow">
+                                <i class="fa-solid fa-arrow-left arrow" id="arrow-left"></i>
+                            </div>
+                            
+                            <div class="image-container">
+                                <div class="image-padding">
+                                    <img src="CSS/images/dog_accueil.jpg" alt="">
+                                    <img src="CSS/images/dog_pres.jpg" alt="">
+                                    <img src="CSS/images/famille.jpg" alt="">
+                                    <img src="CSS/images/ptits-loup.jpg" alt="">
+                                </div>
+                                <div class="image-padding">
+                                        <img src="CSS/images/dog1.jpg" alt="">
+                                        <img src="CSS/images/dog2.jpg" alt="">
+                                        <img src="CSS/images/dog3.jpg" alt="">
+                                        <img src="CSS/images/dog4.jpg" alt=""> 
+                                </div>
+                                <div class="image-padding">
+                                        <img src="CSS/images/dog5.jpg" alt="">
+                                        <img src="CSS/images/dog6.jpg" alt="">
+                                        <img src="CSS/images/dog7.jpg" alt="">
+                                        <img src="CSS/images/dog8.jpg" alt=""> 
+                                </div>
+                            </div>
+                        </div>  
+
+            <!--ARTICLES-->
+                        <div class="article">
+                            <h3>Articles</h3>
+                            <div class="btn-sign-in">
+                                <a>Se connecter</a>  |
+                                
+                                <i class="fa fa-cart-shopping"></i> 
+                                0 
+                                <ul>
+                                    <li>Mon profile&nbsp;&nbsp;<i class="fa-solid fa-user"></i></li>
+                                    <li></i>Mes achats&nbsp;&nbsp;<i class="fa-solid fa-basket-shopping"></i></li>
+                                    <li class="se-deco"></i>Se deconnecter&nbsp;&nbsp;<i class="fa-solid fa-user-slash"></i></li>
+
+                                </ul>
+                            </div>
+                            <h4>T-shirts</h4>
+                            <div class="t-shirt">  
+                                <div class="container-t-shirt">
+                                    <div class="image">
+                                        <img src="CSS/images/mockup/t-shirt-blue.png" alt="" width="150">
+                                    </div>
+                                    <div class="product-name">
+                                        <div class="name">Blue t-shirt</div>
+                                        <div class="rating"></div>
+                                    </div>
+                                    <div class="price">10.000 Ar</div>
+                                    <div class="btn-cart">
+                                        <button><i class="fa fa-cart-shopping"></i>&nbsp;&nbsp;Acheter</button>
+                                    </div>
+                                </div> 
+            
+                                <div class="container-t-shirt">
+                                    <div class="image">
+                                        <img src="CSS/images/mockup/t-shirt-orange.png" alt="" width="150">
+                                    </div>
+                                    <div class="product-name">
+                                        <div class="name">Orange t-shirt</div>
+                                        <div class="rating"></div>
+                                    </div>
+                                    <div class="price">10.000 Ar</div>
+                                    <div class="btn-cart">
+                                        <button><i class="fa fa-cart-shopping"></i>&nbsp;&nbsp;Acheter</button>
+                                    </div>
+                                </div> 
+            
+                                <div class="container-t-shirt">
+                                    <div class="image">
+                                        <img src="CSS/images/mockup/t-shirt-red.png" alt="" width="150">
+                                    </div>
+                                    <div class="product-name">
+                                        <div class="name">Red t-shirt</div>
+                                        <div class="rating"></div>
+                                    </div>
+                                    <div class="price">10.000 Ar</div>
+                                    <div class="btn-cart">
+                                        <button><i class="fa fa-cart-shopping"></i>&nbsp;&nbsp;Acheter</button>
+                                    </div>
+                                </div> 
+            
+                                <div class="container-t-shirt">
+                                    <div class="image">
+                                        <img src="CSS/images/mockup/t-shirt-light-blue.png" alt="" width="150">
+                                    </div>
+                                    <div class="product-name">
+                                        <div class="name">Light Blue t-shirt</div>
+                                        <div class="rating"></div>
+                                    </div>
+                                    <div class="price">10.000 Ar</div>
+                                    <div class="btn-cart">
+                                        <button><i class="fa fa-cart-shopping"></i>&nbsp;&nbsp;Acheter</button>
+                                    </div>
+                                </div> 
+                            </div>
+                    <!--COMMENTAIRES-->    
+                            <h3>Espace Commentaires</h3> 
+                            <section class="section-commentaire">
+                                <div class="section-info">
+                                    <h4>Rabeloha</h4>
+                                    <input type="text" placeholder="Ajouter un commentaire"></d> 
+                                    <div class="section-poster">
+                                        <button>Poster</button>
+                                    </div>
+                                    <div class="section-reaction">
+                                        <i class="fa-solid fa-thumbs-down"></i>&nbsp;&nbsp;<span>0</span>
+                                        <i class="fa-solid fa-thumbs-up"></i>&nbsp;&nbsp;<span>0</span>
+                                        <button>Répondre</button>
+                                    </div>
+                                    <div class="section-reponse">
+
+                                    </div>
+                                </div>
+                            </section>   
+                        </div>
+            <!--CONTACT-->
+                        <div class="contact">
+                            <h3>Contact</h3>
+                            <div class="contact-list">
+                                <a href="https://www.google.com/maps/dir/-18.9105194,47.5186529/    Ambatobe,+Tananarive/@-18.892025,47.5209412,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x21f08702cd8e1ec5:0x77c574efafb383eb!2m2!1d47.5582392!2d-18.8754385">
+                                    <i class="fa fa-location-dot"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    
+                                    <span>Ambatobe, Antananarivo, Madagascar</span>
+                                </a>
+                                <span>
+                                    <i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    (+261) 34 06 405 98
+                                </span>
+
+                                <span>
+                                    <i class="fa fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp; 
+                                    ptitsloupmadagascar@gmail.com
+                                </span>
+
+                                <a href="https://www.instagram.com/ptitsloupsmadagascar/">
+                                    <i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span>ptitsloupmadagascar</span>
+                                </a>
+                                <a href="https://mobile.twitter.com/">
+                                    <i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span>ptitsloupmadagascar</span>
+                                </a>
+                            </div>
+                        </div>
+
+
+            <!--PRESENTATION-->
+                        <div class="presentation">
+                            <h3>Présentation</h3>
+                            <span class="text-illustration">
+                                <img src="CSS/images/dog_pres.jpg" class="illustration" alt="">
+                                <span>
+                                    P’tits loup d’Amour Madagascar est un    <b>élevage familial par des vétérinaires</b>. Notre famille est très passionnée de <b>Berger Blanc Suisse</b> et de <b>Berger allemand noir</b>. Nos reproducteurs ont été sélectionnés parmi l’un des meilleurs éleveurs et aussi vétérinaire de Berger Blanc Suisse en Belgique. Dans le respect du standard de la race par la Fédération Cynologique Internationale FCI, cette sélection a été réalisée avec <b>une grande attention</b> ; tant au niveau de leur santé qu'au niveau de leur caractère. Les chiots sont élevés avec beaucoup d’amours et de professionnalisme. Ils sont éveillés à la vie et rêvent de partir rejoindre des familles aussi passionnées que nous la sommes. Vous pouvez choisir votre chiot pour l’exposition, le sport ou tout simplement de compagnie. N’hésitez pas à nous contacter pour trouver votre futur compagnon.
+                                </span>     
+                            </span>    
+                        </div>
+
+            <!--A PROPOS-->
+                        <div class="a-propos">
+                            <h3>A propos</h3>
+                            <span class="text-illustration">
+                                <img class="illustration rotation" src="CSS/images/ptits-loup.jpg" alt="" width="50"> 
+                                <p>
+                                    Nous sommes  P’tits loups d’Amour Madagascar  et nous sommes situés à Ambatobe (Antananarivo). Nous reproduisons une belle lignée de chiens de compagnie et le <b>Berger Blanc Suisse</b> est notre passion.
+                                </p>
+                            </span>
+                            <span class="text-illustration left">
+                                <img class="illustration child" src="CSS/images/famille.jpg" alt=""  >
+                                <span>
+                                    Notre élevage de <b>Berger Blanc Suisse</b>  est familial par des vétérinaires. Nos chiens sont en libertés avec nous dans la maison et les cours durant toute la semaine. Et le weekend nous organisons une petite sortie à la campagne pour que notre chien profite de la richesse du beau paysage Malagasy.  Nous sommes totalement amoureux de la race et de toutes ses qualités. <b>Le berger Blanc Suisse</b> que nous reproduisons est un compagnon familial très intelligent, loyal, enjoué, et facile à entraîner car il possède un focus et un besoin d'apprendre. <br><br>
+                                </span>     
+                            </span> 
+                            <span class="text-illustration">
+                                <img class="illustration child position" src="CSS/images/male-femelle.jpg" alt=""  width="200">
+                                <span>
+                                    Pour commencer notre élevage, nous avons une femelle et  un mâle, de haute lignées (ADN avec diversité génétique), avec pedigree et sont inscrits au <b>Livre des Origines Saint Hubert</b>  (ou LOSH).  Le suivie de l’état santé de nos chiens est pris aux sérieux.
+                                    Notez bien que nous sommes sélectif dans le choix de nos adoptants, nous demandons quand même le minimum de connaissance sur la race <b>Berger Blanc Suisse</b>, sur ses qualités, ses faiblesses et aussi sur le fait qu’un chiot bouge et demande constamment de l’attention et de la patience.
+                                    Nous vous assisterons afin de bien faire l'éducation et la socialisation à l'aide des astuces qui nous auront aidés au cours de nos apprentissages avec nos propres chiots !
+                                </span>     
+                            </span> 
+                        </div>
+
+            <!--LIEN-->
+                        <div class="lien">
+                            <h3>Liens</h3>
+                            <span>
+                                Vous pouvez nous contactez sur l'address      Email : Ptitsloupmadagascar@gmail.com <br>
+                                et sur notre page Facebook : <a href="https://www.facebook.com/profile.php?id=100085911520273" id="styleLink"> https://www.facebook.com/profile.php?id=100085911520273</a>
+                            </span>
+                        </div>
+
+            <!--MALE-->
+                        <div class="male">
+                            <h3>Mâle</h3>
+                            <span></span>
+                        </div>
+
+            <!--FEMELLE-->
+                        <div class="femelle">
+                            <h3>Femelle</h3>
+                            <span></span>
+                        </div>
+                        
+            <!--CHIOTS-->
+                        <div class="div-chiots">
+                            <h3>Chiots</h3>
+                            <span>Bientôt</span>
+                        </div>
+
+            <!--FUTURE PORTEES-->
+                        <div class="future-portees">
+                            <h3>Future portees</h3>
+                            <span>Bientôt</span>
+                        </div>  
+                </section>
+        </div>  
+
+    <!--PRODUCT DETAILS-->
+        <div class="container-details">
+            <div class="container-product"> 
+                <div class="img-details">
+                    <div class="x-mark" id="x-mark"> <i class="fa fa-circle-xmark fa-2x"></i></div>
+                    <img id="image-product" src="CSS/images/mockup/t-shirt-red.png" alt="" width="380">
+                </div>
+            
+                <div class="product-name">
+                    <h1>T-shirt</h1>
+                </div>
+                <div class="color-selection">
+                    <div id="btn-blue" class="blue"></div>
+                    <div id="btn-red" class="red"></div>
+                    <div id="btn-orange" class="orange"></div>
+                    <div id="btn-light-blue" class="light-blue"></div>
+                </div>
+            </div>
+            <!--SIZE QUANTITY-->
+            <div class="size-quantity">
+                <div class="size">
+                    <h3>Tailles</h3>
+                    <div class="size-selection">
+                        <button id="btn-size">S</button>
+                        <button id="btn-size">M</button>
+                        <button id="btn-size">L</button>
+                    </div>
+                </div>
+
+                <div class="quantity">
+                    <h3>Quantité(s) : <span id="nbr-product">1</span></h3>
+                    <div class="add-remove">
+                        <button id="add">+</button>
+                        <button id="remove">-</button>
+                    </div>
+                </div> 
+            </div>
+
+            <!--BUTTON-->
+            <div class="btn-confirmation">
+                <button id ="btn-cart"> <i class="fa fa-cart-shopping"></i> Ajouter au panier</button>
+                <button id="btn-buy">Acheter</button>
+            </div>
+        </div>
+
+<!--FOOTER-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-title">
+                <h5>P'TITS LOUPS D'AMOUR MADAGASCAR</h5>
+                <p>Les textes et les images sont la propriété de ce site - Reproduction interdite.</p>
+            </div>
+            <div class="footer-contact">
+                <p class="footer-follow">
+                    Vous pouvez nous suivre
+                </p>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100085911520273"><i class="fa-brands fa-facebook fa-1x facebook"></i></a></li>
+                    <li><a href="https://mobile.twitter.com/"><i class="fa-brands fa-twitter fa-1x twitter"></i></a></li>
+                    <li class="fa-stack"><a href="https://www.instagram.com/ptitsloupsmadagascar/"><i class="fa-brands fa-instagram fa-1x instagram"></i></a></li>    
+                </ul>
+                <p class="copyright">Copyright @ 2022</p>
+            </div>
+        </div> 
+    </footer>
+    
+    <script src="JS/main.js"></script>
+    
+</body>
+</html>

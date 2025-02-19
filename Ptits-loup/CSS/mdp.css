@@ -1,0 +1,211 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    color: white;
+}
+
+h2, h3, p, h5{
+    margin: 0;
+    padding: 0;
+}
+
+/*FIRST SLIDE ADDRESSE EMAIL*/
+.container-mdp button{
+    width: 30%;
+    padding: .3em .5em .3em .5em;
+    margin-bottom: 1em;
+    color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    border-radius: 5px;
+    background-color: #06a416  ;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.437);
+    transition: .2s;
+    text-align: center;
+    margin: .5em auto;
+    font-weight: 600;
+    margin: .5em .5em;
+    transition: .2s;
+}
+
+.container-mdp #btn-annuler{
+    background-color: white;
+    color: black;
+}
+
+.container-mdp button:hover{
+    transform: translateY(-2px);
+}
+
+.container-mdp{
+    background: linear-gradient(356deg, rgb(27, 20, 150) 0%, rgb(23, 23, 166) 35%, rgba(3,142,170,1) 100%);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 25%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    padding: .5em;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+    z-index: 666;
+}
+
+.container-mdp input{
+    padding: .5em;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    font: inherit;
+    font-size: 12px;
+    width: 250px;
+
+}
+
+/*CODE VERIFICATION*/
+.code-email{
+    background: linear-gradient(356deg, rgb(27, 20, 150) 0%, rgb(23, 23, 166) 35%, rgba(3,142,170,1) 100%);
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 25%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    padding: .5em;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+
+.code-email button{
+    width: 40%;
+    padding: .3em .5em .3em .5em;
+    margin-bottom: 1em;
+    color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    border-radius: 5px;
+    background-color: #06a416  ;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.437);
+    transition: .2s;
+    text-align: center;
+    margin: .5em auto;
+    font-weight: 600;
+}
+
+.code-email button:hover{
+    transform: translateY(-2px);
+}
+
+.code-email .code-verification input{
+    padding: .5em;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    font: inherit;
+    font-size: 12px;
+    text-align: center;
+   
+}
+
+/*VALIDATION MOT DE PASSE*/
+.reset-password{
+    background: linear-gradient(356deg, rgb(27, 20, 150) 0%, rgb(23, 23, 166) 35%, rgba(3,142,170,1) 100%);
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 20%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    padding: .5em;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+   
+}
+
+.reset-password button{
+    width: 40%;
+    padding: .3em .5em .3em .5em;
+    margin-bottom: 1em;
+    color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    border-radius: 5px;
+    background-color: #06a416  ;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.437);
+    transition: .2s;
+    text-align: center;
+    margin: .5em auto;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.reset-password button:hover{
+    transform: translateY(-2px);
+}
+
+.container-new-mdp{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+
+}
+
+.container-new-mdp input{
+    margin: .5em;
+    padding: .5em;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    font: inherit;
+    font-size: 12px;
+    text-align: center;
+}
+
+.reset-password button{
+    width: 60%;
+}
+
+/*CLASSE ANIMATION*/
+    .opacity-div-in{
+        animation: opacitySlideIn .5s ease-in-out forwards;
+    }
+
+    @keyframes opacitySlideIn {
+        from{
+            z-index: -999;
+            opacity: 0;
+        }to {
+            z-index: 888;
+            opacity:1;
+        }
+    }
+
+    .opacity-div-out{
+        animation: opacitySlideOut .5s ease-in-out forwards;
+    }
+
+    @keyframes opacitySlideOut {
+        from{
+            z-index: 558;
+            opacity: 1;
+        }to {
+            z-index: -6;
+            opacity: 0;
+        }
+    }
+
