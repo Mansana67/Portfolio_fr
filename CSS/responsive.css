@@ -7,6 +7,13 @@
         padding: 0em 2em;
         padding-bottom: 2em;
     }
+
+    .creation {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
     
     .main-div .content-div{
         width: 100%;
@@ -19,13 +26,6 @@
     /*BUTTON PORTFOLIO*/
     .main-div .nav-btn button{
         padding: .5em;
-    }
-
-    .creation {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
     }
 
     /*HERO SECTION*/
