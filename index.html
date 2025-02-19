@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- STYLESHEESH -->
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="icon" href="IMG/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSideBar()><a href=""><i class="fa fa-window-close fa-2x" aria-hidden="true"></i></a></li>
+                <li class="btn active"><a href="#hero">Accueil</a></li>
+                <li class="btn"><a href="#about">A propos</a></li>
+                <li class="btn"><a href="#resume">CV</a></li>
+                <li class="btn"><a href="portfolio_fr.html">Portfolio</a></li>
+
+            </ul>
+            <ul>
+                <li id="logo"> <img src="IMG/White-logo.png" alt="" height="30px">&nbsp;&nbsp;JodaRak</li>
+                <li class="hideOnMobile"><a href="#hero">Accueil</a></li>
+                <li class="hideOnMobile"><a href="#about">A propos</a></li>
+                <li class="hideOnMobile"><a href="#resume">CV</a></li>
+                <li class="hideOnMobile"><a href="portfolio_fr.html">Portfolio</a></li>
+                <li class="menu-btn" onclick=showSideBar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="section hero" id="hero">
+        <div class="content">
+            <div class="name">
+                <li id="weight-normal">JODA</li>
+                <li id="weight-bold">RAKOTOMAMONJY</li>
+                <li id="weight-light">Artiste 3D / Développeur Web</li>
+            </div>
+            <div class="btn-home-page">
+                <button id="btn-resume"><a href="#resume">CV</a></button>
+                <button id="btn-portfolio"><a href="portfolio_fr.html">Portfolio</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section about" id="about">
+        <div class="content-about">
+            <div class="about">
+                <h1>À propos</h1>
+                <span><i class="fa-brands fa-google"></i> : jodarakotomamonjy@gmail.com</span>
+                <p>Artiste 3D passionné et développeur web, j’aime donner vie aux idées à travers la modélisation, l’animation et le design. Mon parcours dans les arts numériques est guidé par une quête de créativité et de narration visuelle, avec pour objectif de concevoir des expériences immersives et intuitives.
+
+                    Que ce soit en réalisant des animations dynamiques ou des sites web élégants et fonctionnels, je m’efforce de créer des œuvres captivantes qui allient esthétique et expérience utilisateur. Toujours avide d’apprendre et d’innover, je suis prêt à relever de nouveaux défis et à collaborer sur des projets qui repoussent les limites de la créativité.</p>
+
+                <div class="contact">
+                    <div class="fb">
+                        <a href="https://www.linkedin.com/in/joda-a-rakotomamonjy-144389242/">
+                            <i class="fa-brands fa-linkedin fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="whatsapp">
+                        <i class="fab fa-whatsapp fa-2x">
+                            <span>+261 34 16 484 56</span>
+                        </i>
+                    </div>    
+                </div>
+                <div class="location">
+                    <span>Madagascar, Antananarivo</span>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="section resume" id="resume">
+        <div class="content-resume">
+            <div class="software-skills">
+                <h2 onclick="toggleContent()" id="activebtn-skills">COMPETENCES LOGICIELS</h2>
+                <div class="contentSkills" id="contentSkills">
+                    <h4>Animation 3D</h4>
+                    <ul>
+                        <li>Blender</li>
+                        <li>Davinci Resolve</li>
+                        <li>Substance painter</li>
+                    </ul>
+                      
+                    <h4>Développement Web</h4>
+                    <ul><li>HTML - CS - JS - PHP</li></ul>
+                        
+                    <h4>Réseau Informatique</h4>
+                    <ul>
+                        <li>CISCO - pfSense </br>Snort - CrowdSec
+                        </li>
+                    </ul>
+                    <div class="language" >
+                        <h2>LANGUES</h2>
+                        <ul>
+                            <li>Anglais</li>
+                            <li>Français</li>
+                            <li>Malgache</li>
+                        </ul>
+                    </div>
+                    <div class="skills">
+                        <h2>COMPETENCES PERSONNELLES</h2>
+                        <ul>
+                            <li>Créativité – Travail d'équipe – Organisation</li>
+                        </ul>
+                    </div>
+                </div>       
+            </div>
+            <div class="container-experience">
+                <div class="education">
+                    <h2 onclick="toggleContentEdu()" id="activebtn-edu">EDUCATION</h2>
+                    <div class="content-edu" id="content-edu">
+                        <div class="edu-list">
+                            <div class="high-school">
+                                <div class="square">
+                                    <span>2018</span>
+                                </div>
+                                <div class="high-school-title">
+                                    <h3>Baccalaureat</h3>
+                                    <p>Lycée Sacre Coeur, Antanimena, Madagascar</p>
+                                </div> 
+                            </div>
+                            <div class="white-bar"></div>
+                            <div class="bachelor-dg">
+                                <div class="square">
+                                    <span>2022</span>
+                                </div>
+                                <div class="bachelor-title">
+                                    <h3>Licence en Développement Web et Multimédia</h3>
+                                    <p>Institut des Arts et</br> des Technologies Avancées (InATA), Madagascar</p>
+                                </div>
+                            </div>
+                            <div class="white-bar"></div>
+                            <div class="master-degree">
+                                <div class="square">
+                                    <span>2024</span>
+                                </div>
+                                <div class="master-title">
+                                    <h3>Master en Cybersécurité et Système</h3>
+                                    <p>Université E-MEDIA Madagascar</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="experience">
+                            <h2>EXPERIENCE</h2>
+                            <div class="ptit-loup">
+                                <div class="square">
+                                    <span>2023</span>
+                                </div>
+                                <div class="exp-web">
+                                    <h3>Ptits Loups d'Amour de Madagascar</h3>
+                                    <p>UI/UX Designer</p>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-creation">
+                <div class="creation">
+                    <h2 onclick="toggleContentWhatCanIdo()" id="activebtn-creation">MON EXPERTISE</h2>
+                    <div class="content-do" id="content-do">
+                        <span>Conception UI/UX - Animation 3D</br>Protection du réseau avec IDS/IPS </br>Conception de la topologie réseau
+                        </span>
+                        <div class="container-hobbies">
+                            <h2>LOISIRS & CENTRES D'INTERET</h2>
+                            <div class="reading-drawing">
+                                <span><i class="fa-solid fa-book"></i>Lecture
+                                </span>
+                                <span><i class="fa-solid fa-pencil"></i>Dessin
+                                </span>
+                            </div>
+                            <div class="gaming-3D">
+                                <span><i class="fa-solid fa-gamepad"></i>Jeux vidéo
+                                </span>
+                                <span><i class="fa-solid fa-paintbrush"></i>Art 3D 
+                                </span>
+                            </div>
+                        </div>
+                    </div> 
+                </div>    
+            </div>
+        </div>
+    </div>
+    <script src="JS/index.js"></script>
+</body>
+</html>
