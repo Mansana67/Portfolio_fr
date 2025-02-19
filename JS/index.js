@@ -105,8 +105,4 @@ function toggleContentWhatCanIdo(){
     }
 }
 
-if (navigator.language.startsWith("fr")) {
-    window.location.href = "index_fr.html"; // Redirect French users
-}
-
 
